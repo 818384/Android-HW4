@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
     <ListView
         android:layout_width="wrap_content"
+        android:id="@+id/myList"
         android:layout_height="wrap_content">
-
     </ListView>
 </LinearLayout>

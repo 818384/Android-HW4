@@ -18,7 +18,7 @@ public class CustomAdapter extends ArrayAdapter {
     private Context context;
     private List<PhoneInfo> phoneInfos;
 
-    public CustomAdapter(@NonNull Context context, int resource, int name, @NonNull List phoneInfos) {
+    public CustomAdapter(@NonNull Context context, int resource, @NonNull List phoneInfos) {
         super(context, resource, phoneInfos);
         this.context = context;
         this.phoneInfos = phoneInfos;
@@ -33,8 +33,8 @@ public class CustomAdapter extends ArrayAdapter {
             convertView = inflater.inflate(R.layout.custom_row_layout, null);
         }
         ImageView avatar = (ImageView) convertView.findViewById(R.id.avatar);
-        TextView name = (TextView) convertView.findViewById(R.id.name);
-        TextView phone = (TextView) convertView.findViewById(R.id.phone);
+        TextView name = (TextView) convertView.findViewById(R.id.tvName);
+        TextView phone = (TextView) convertView.findViewById(R.id.tvPhone);
         avatar.setImageResource(phoneInfos.get(position).getAvatar());
         name.setText(phoneInfos.get(position).getName());
         phone.setText(phoneInfos.get(position).getPhone());

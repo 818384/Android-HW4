@@ -7,25 +7,29 @@
     <ImageView
         android:layout_width="121dp"
         android:layout_height="85dp"
-        android:id="@+id/avatar">
-
+        android:id="@+id/avatar"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
     </ImageView>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tvName"
-            android:text="name"></TextView>
+            android:text="name"
+            android:textSize="20dp"></TextView>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/tvPhone"
-            android:text="phone"></TextView>
+            android:text="phone"
+            android:textSize="20dp"></TextView>
     </LinearLayout>
 </LinearLayout>

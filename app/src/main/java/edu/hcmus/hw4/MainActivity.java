@@ -18,9 +18,9 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String[] names = {"Nguyen Van C", "Tran Van B", "Phan Van A"};
-        String[] phones = {"0626300342", "0626300342", "0626300342"};
-        Integer[] avatars = {R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background};
+        String[] names = {"Nguyen Van C", "Tran Van B", "Phan Van A", "Nguyen Thi D", "Lam Van E"};
+        String[] phones = {"0626300341", "0626300342", "0626300343", "0626300344", "0626300345"};
+        Integer[] avatars = {R.drawable.avatar0, R.drawable.avatar1, R.drawable.avatar2, R.drawable.avatar3, R.drawable.avatar4};
 
         for (int i = 0; i < names.length; i++) {
             phoneInfos.add(new PhoneInfo(names[i], phones[i], avatars[i]));
